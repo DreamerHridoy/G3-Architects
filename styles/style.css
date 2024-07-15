@@ -156,8 +156,54 @@ body {
   font-weight: 700;
   font-size: 4rem;
 }
-
-/* banner part responsive  */
+/* <!-- some facts  section -->  */
+.fact-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.fact-details {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.card-box {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  width: 240px;
+  height: 240px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.card-of-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-achieve {
+  color: rgb(114, 114, 114);
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* sponsor part  */
+.sponsor-details {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+.sponsor-title {
+  font-family: Work Sans;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+/* small device responsive  */
 @media screen and (max-width: 576px) {
   .nav-bar,
   .nav-items,
@@ -176,5 +222,10 @@ body {
   #exclusive-button {
     margin-top: 20px;
     margin-left: 20px;
+  }
+  .card-of-info {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 60px;
+    gap: 10px;
   }
 }
