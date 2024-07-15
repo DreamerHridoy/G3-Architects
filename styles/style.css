@@ -98,10 +98,29 @@ body {
   font-weight: 500;
   font-size: 2.8rem;
 }
+.feature-description {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.list-of-features {
+  margin-top: 85px;
+  margin-bottom: 130px;
+  align-items: center;
+}
+.features-contain {
+  margin-left: 76px;
+}
+
 /* banner part responsive  */
 @media screen and (max-width: 576px) {
   .nav-bar,
-  .nav-items {
+  .nav-items,
+  .list-of-features {
     flex-direction: column;
+  }
+  .feature-image {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
   }
 }
